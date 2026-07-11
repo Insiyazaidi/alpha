@@ -3,8 +3,8 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../contexts/AuthContext'
 
 const NAV_ITEMS = [
-  { to: '/dashboard', icon: '📊', label: 'Analytics',    adminOnly: true  },
-  { to: '/products',  icon: '📦', label: 'Products',     adminOnly: false },
+  { to: '/dashboard', label: 'Analytics',    adminOnly: true  },
+  { to: '/products',   label: 'Products',     adminOnly: false },
 ]
 
 export default function Sidebar({ collapsed, onCollapse, mobileOpen, onMobileClose }) {
@@ -58,7 +58,7 @@ export default function Sidebar({ collapsed, onCollapse, mobileOpen, onMobileClo
             <>
               <span className="nav-section-label">Admin</span>
               <div className="nav-item" style={{ cursor: 'default', opacity: 0.5 }}>
-                <span className="nav-icon">🔒</span>
+                
                 <span className="nav-label">Access Control</span>
               </div>
             </>
@@ -71,7 +71,7 @@ export default function Sidebar({ collapsed, onCollapse, mobileOpen, onMobileClo
             id="nav-logout"
             style={{ width: '100%', textAlign: 'left', background: 'none', border: 'none', cursor: 'pointer' }}
           >
-            <span className="nav-icon">🚪</span>
+           
             <span className="nav-label">Logout</span>
           </button>
         </nav>
@@ -83,7 +83,7 @@ export default function Sidebar({ collapsed, onCollapse, mobileOpen, onMobileClo
             <div className="profile-name">{currentUser?.name}</div>
             <div className="profile-role">
               <span className={`role-badge ${currentUser?.role}`}>
-                {currentUser?.role === 'admin' ? '👑' : '👤'} {currentUser?.role}
+                {currentUser?.role}
               </span>
             </div>
           </div>
