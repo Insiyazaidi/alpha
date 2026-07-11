@@ -76,15 +76,7 @@ export default function TopNav({ collapsed, onToggleSidebar }) {
           </span>
         </div>
 
-        {/* Notifications */}
-        <button className="topnav-icon-btn text-sm   " aria-label="Notifications" id="topnav-notifications">
-          Notify
-        </button>
-
-        {/* Settings */}
-        <button className="topnav-icon-btn text-sm  " aria-label="Settings" id="topnav-settings">
-          Setting
-        </button>
+    
 
         {/* User Avatar + Dropdown */}
         <div style={{ position: 'relative' }} ref={dropdownRef}>
