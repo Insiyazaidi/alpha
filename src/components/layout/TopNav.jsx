@@ -77,12 +77,12 @@ export default function TopNav({ collapsed, onToggleSidebar }) {
         </div>
 
         {/* Notifications */}
-        <button className="topnav-icon-btn" aria-label="Notifications" id="topnav-notifications">
-          Notification
+        <button className="topnav-icon-btn text-sm   " aria-label="Notifications" id="topnav-notifications">
+          Notify
         </button>
 
         {/* Settings */}
-        <button className="topnav-icon-btn" aria-label="Settings" id="topnav-settings">
+        <button className="topnav-icon-btn text-sm  " aria-label="Settings" id="topnav-settings">
           Setting
         </button>
 
