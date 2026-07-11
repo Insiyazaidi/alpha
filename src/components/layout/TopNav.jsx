@@ -78,12 +78,12 @@ export default function TopNav({ collapsed, onToggleSidebar }) {
 
         {/* Notifications */}
         <button className="topnav-icon-btn" aria-label="Notifications" id="topnav-notifications">
-          🔔
+          Notification
         </button>
 
         {/* Settings */}
         <button className="topnav-icon-btn" aria-label="Settings" id="topnav-settings">
-          ⚙️
+          Setting
         </button>
 
         {/* User Avatar + Dropdown */}
@@ -107,7 +107,7 @@ export default function TopNav({ collapsed, onToggleSidebar }) {
                 </div>
                 <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>{currentUser?.email}</div>
                 <span className={`role-badge ${currentUser?.role}`} style={{ marginTop: 4 }}>
-                  {currentUser?.role === 'admin' ? '👑' : '👤'} {currentUser?.role}
+                 {currentUser?.role}
                 </span>
               </div>
               <div
@@ -116,7 +116,7 @@ export default function TopNav({ collapsed, onToggleSidebar }) {
                 onClick={() => { setDropdownOpen(false); navigate('/products') }}
                 id="dropdown-products"
               >
-                📦 <span>Products</span>
+                 <span>Products</span>
               </div>
               {isAdmin && (
                 <div
@@ -125,7 +125,7 @@ export default function TopNav({ collapsed, onToggleSidebar }) {
                   onClick={() => { setDropdownOpen(false); navigate('/dashboard') }}
                   id="dropdown-analytics"
                 >
-                  📊 <span>Analytics</span>
+                   <span>Analytics</span>
                 </div>
               )}
               <div className="dropdown-divider" />
@@ -135,7 +135,7 @@ export default function TopNav({ collapsed, onToggleSidebar }) {
                 onClick={handleLogout}
                 id="dropdown-logout"
               >
-                🚪 <span>Logout</span>
+                 <span>Logout</span>
               </div>
             </div>
           )}

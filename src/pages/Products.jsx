@@ -98,7 +98,6 @@ export default function Products() {
   if (loading) return <Spinner message="Loading products…" />
   if (error) return (
     <div className="empty-state">
-      <span className="empty-icon">⚠️</span>
       <p className="empty-title">Failed to load products</p>
       <p className="empty-desc">{error}</p>
     </div>
