@@ -158,7 +158,7 @@ export default function ProductDetail() {
                   onClick={() => togglePublished(product.id)}
                   style={{ width: '100%' }}
                 >
-                  {product.published ? '🔒 Hide from Users' : '🔓 Publish Product'}
+                  {product.published ? ' Hide from Users' : ' Publish Product'}
                 </button>
               </div>
             )}

@@ -48,7 +48,7 @@ export default function Login() {
       <div className="login-card" role="main" aria-label="Login form">
         {/* Logo */}
         <div className="login-logo">
-          <div className="login-logo-icon">⚡</div>
+        
           <span className="login-logo-text">AdminPulse</span>
         </div>
 
@@ -103,7 +103,7 @@ export default function Login() {
           {DEMO_CREDS.map((cred) => (
             <div key={cred.role} className="demo-cred-row">
               <span className="demo-cred-role">
-                {cred.role === 'admin' ? '👑' : '👤'} {cred.role}
+                {cred.role}
                 <span style={{ fontSize: 11, color: 'var(--text-muted)', marginLeft: 4 }}>
                   ({cred.description})
                 </span>

@@ -91,7 +91,7 @@ export default function Dashboard() {
 
   if (!analytics) return (
     <div className="empty-state">
-      <span className="empty-icon">📊</span>
+   
       <p className="empty-title">No data available</p>
     </div>
   )
@@ -120,7 +120,7 @@ export default function Dashboard() {
       {/* Stats Cards */}
       <div className="stats-grid">
         <StatsCard
-          icon="📦"
+        
           value={analytics.totalProducts.toLocaleString()}
           label="Total Products"
           trend={1}
@@ -129,7 +129,7 @@ export default function Dashboard() {
           iconBg="rgba(124,111,247,0.15)"
         />
         <StatsCard
-          icon="⭐"
+         
           value={analytics.avgRating.toFixed(2)}
           label="Average Rating"
           trend={1}
@@ -138,7 +138,7 @@ export default function Dashboard() {
           iconBg="rgba(251,191,36,0.12)"
         />
         <StatsCard
-          icon="💰"
+         
           value={`$${(analytics.totalInventoryValue / 1000).toFixed(0)}K`}
           label="Total Inventory Value"
           trend={1}
@@ -147,7 +147,7 @@ export default function Dashboard() {
           iconBg="rgba(74,222,128,0.12)"
         />
         <StatsCard
-          icon="🏷️"
+       
           value={analytics.publishedCount}
           label="Published Products"
           trend={0}
